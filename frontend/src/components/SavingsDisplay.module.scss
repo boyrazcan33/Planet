@@ -1,0 +1,43 @@
+@use '../styles/variables' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0;
+}
+
+.savingsAmount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: $color-primary;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.savingsLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-text-secondary;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: $color-text-secondary;
+  margin-top: 0.25rem;
+}
+
+.kg {
+  font-weight: 600;
+  color: $color-text;
+}
+
+.divider {
+  opacity: 0.4;
+}

@@ -1,0 +1,70 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-background;
+  color: $color-text;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  .app-logo {
+    display: block;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    color: $color-text-secondary;
+    font-size: 0.95rem;
+  }
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
