@@ -33,9 +33,7 @@ build/
 .vscode/
 
 ### --- Sensitive Data --- ###
-backend/src/main/resources/application.properties
-
+**/application.properties
 frontend/node_modules/
 frontend/dist/
-backend/src/main/resources/application.properties
 *.env*

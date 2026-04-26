@@ -16,11 +16,6 @@ public class EmissionCalculatorService {
             "EBIKE",   25.0
     );
 
-    public double computeSavingsGrams(Persona persona) {
-        double vehicleEmission = VEHICLE_EMISSIONS.get(persona.getVehicleType());
-        return (BASELINE_G_PER_KM - vehicleEmission) * persona.getDistanceKm();
-    }
-
     public CalculationResult calculate(Persona persona, String heroMessage) {
         double vehicleEmission = VEHICLE_EMISSIONS.get(persona.getVehicleType());
         double distanceKm     = persona.getDistanceKm();

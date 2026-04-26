@@ -3,7 +3,7 @@ package com.bolt.planet.controller;
 import com.bolt.planet.model.CalculationResult;
 import com.bolt.planet.model.Persona;
 import com.bolt.planet.repository.PersonaRepository;
-import com.bolt.planet.service.AIService;
+import com.bolt.planet.service.HeroMessageService;
 import com.bolt.planet.service.EmissionCalculatorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,14 +16,14 @@ public class BoltPlanetController {
 
     private final PersonaRepository personaRepository;
     private final EmissionCalculatorService emissionCalculatorService;
-    private final AIService aiService;
+    private final HeroMessageService heroMessageService;
 
     public BoltPlanetController(PersonaRepository personaRepository,
                                 EmissionCalculatorService emissionCalculatorService,
-                                AIService aiService) {
+                                HeroMessageService heroMessageService) {
         this.personaRepository = personaRepository;
         this.emissionCalculatorService = emissionCalculatorService;
-        this.aiService = aiService;
+        this.heroMessageService = heroMessageService;
     }
 
     @GetMapping("/personas")
@@ -35,13 +35,7 @@ public class BoltPlanetController {
     public ResponseEntity<CalculationResult> calculate(@PathVariable int id) {
         return personaRepository.findById(id)
                 .map(persona -> {
-                    double savingsGrams = emissionCalculatorService.computeSavingsGrams(persona);
-                    String heroMessage  = aiService.generateHeroMessage(
-                            persona.getName(),
-                            persona.getVehicleType(),
-                            persona.getDistanceKm(),
-                            savingsGrams
-                    );
+                    String heroMessage = heroMessageService.generateHeroMessage(persona.getName());
                     CalculationResult result = emissionCalculatorService.calculate(persona, heroMessage);
                     return ResponseEntity.ok(result);
                 })
