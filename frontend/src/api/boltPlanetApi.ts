@@ -1,6 +1,6 @@
 import type { CalculationResult, Persona } from '../types';
 
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'https://bolt-planet-backend-250080246614.europe-north1.run.app/api';
 
 export async function fetchPersonas(): Promise<Persona[]> {
   const res = await fetch(`${BASE_URL}/personas`);
