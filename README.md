@@ -2,6 +2,13 @@
 
 > See how much CO₂ you save by choosing a scooter or e-bike over a private car.
 
+*Imagine you are a Bolt user and you see this exact same pop up right after your ride — just like when you select a persona in my app.*
+
+> **Awareness.**
+> **Impact.**
+> **Stewardship.**
+ 
+
 **Live Demo:** [bolt-fe-six.vercel.app](https://bolt-fe-six.vercel.app)
 
 ---
