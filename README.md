@@ -13,6 +13,17 @@
 
 ---
 
+## 🌍 Impact: Problem vs. Solution
+
+| Problem | Bolt Planet Solution |
+| :--- | :--- |
+| **Lack of Motivation** | **Hero Feedback:** Personalized stories that reward users for choosing green. |
+| **Abstract Data** | **Real Impact:** Somut CO2 savings calculated using local Tallinn data. |
+| **Cold Experience** | **Persona Logic:** Cheerful, eco-friendly feedback for every individual rider. |
+
+### 🚀 Future Roadmap
+- **Gamification:** Turn environmental impact into profile badges.
+- **Rewards:** Redeem your CO2 savings for discounts and Bolt promotions.
 ## What is this?
 
 Bolt Planet is a small web app that lets you pick a persona and instantly see how many grams of CO₂ they saved by riding a Bolt scooter or e-bike instead of driving a private car. Emissions are compared against the average car baseline of **160g CO₂/km**.
