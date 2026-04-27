@@ -34,14 +34,14 @@ Each persona has a real Tallinn scenario — a coastal ride, a cross-city commut
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | React 19, TypeScript, Vite 8, SCSS Modules |
-| Backend | Java 21, Spring Boot 4, Lombok |
-| AI Messages | Anthropic Java SDK |
-| Frontend Hosting | Vercel |
-| Backend Hosting | Google Cloud Run |
-| Container Registry | Google Artifact Registry |
+| Layer                 | Technology |
+|-----------------------|---|
+| Frontend              | React 19, TypeScript, Vite 8, SCSS Modules |
+| Backend               | Java 21, Spring Boot 4, Lombok |
+| AI Messages(optional) | Anthropic Java SDK |
+| Frontend Hosting      | Vercel |
+| Backend Hosting       | Google Cloud Run |
+| Container Registry    | Google Artifact Registry |
 
 ---
 
